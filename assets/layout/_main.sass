@@ -1,0 +1,30 @@
+#main
+  min-height: 500px
+  .wrapper
+    min-height: 500px
+    display: flex
+    align-items: center
+.text
+  font-family: sans-serif
+  display: flex
+  flex-direction: column
+  h1
+    text-transform: uppercase
+    font-size: 2.5rem
+    font-weight: bold
+    margin: 10px 0
+  p
+    margin: 2px 0
+    font-size: 1.1rem
+    a
+      text-decoration: none
+      color: $main-color-dark
+  .btn
+    color: #fff
+    background-color: $main-color-dark
+    margin-top: 30px
+    @include btn
+    &:hover
+      background-color: #fff
+      color: $letter-color
+      transition: background-color .3s ease-in-out, color .3s ease-in-out

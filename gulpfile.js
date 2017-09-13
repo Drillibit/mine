@@ -63,6 +63,7 @@ gulp.task('serve', ['sass'], function(){
 });
 
 gulp.task('watch', function(){
+	gulp.watch('slick/**/*.css');
 	gulp.watch('assets/**/*.sass', ['sass']);
 	gulp.watch('assets/**/*.css', ['autoprefixer']);
 	gulp.watch('assets/**/*.js', ['js']);
