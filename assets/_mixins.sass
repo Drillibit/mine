@@ -7,10 +7,27 @@
   width: 160px
   font-size: 1.1rem
   text-decoration: none
+  outline: none
   box-shadow: 2px 4px 16px $main-color-dark
+  color: #fff
+  background-color: $main-color-dark
+  margin-top: 30px
+  &:hover
+    background-color: #fff
+    color: $letter-color
+    transition: background-color .3s ease-in-out, color .3s ease-in-out
 @mixin line-h
   width: 15%
   height: 2px
   background-color: $main-color-light
   border: none
-  margin: 2rem auto
+@mixin form-style
+  background-color: $border-section-color
+  border-radius: 10px
+  padding: 20px
+  font-size: 1.2rem
+  color: $letter-color
+  font-family: sans-serif
+  border: none
+  margin: 15px 0
+  outline: none
